@@ -13,7 +13,8 @@ import {
   ArrowRight,
   X
 } from 'lucide-react';
-import { MINISTRIES } from '../data/ministries';
+import { MINISTRIES, MINISTRY_FOCUSES } from '../data/ministries';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import ScrollReveal from '../components/ScrollReveal';
 import ContactCTA from '../components/ContactCTA';
@@ -47,13 +48,20 @@ export default function Ministries({ onOpenPlanVisit, onOpenPrayerRequest }) {
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="Our Ministries | Jehovah Shalom International Missions"
+        description="Explore the ministries of Jehovah Shalom International Missions (JSM Ministries) — Evangelism, Church Planting, Community Transformation, Worship, Youth, Children, and Prayer."
+        canonicalPath="/ministries"
+        keywords="Jehovah Shalom ministries, Evangelism Usilampatti, Church planting Tamil Nadu, Community outreach JSM, Christian ministries"
+        breadcrumbs={[{ name: "Ministries", path: "/ministries" }]}
+      />
       
       {/* Page Header (Bright Pleasant Theme) */}
       <section className="relative py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1920&auto=format&fit=crop"
-            alt="Ministries at Jehova Shalom"
+            src="/images/pastor and pastors wife praying.jpeg"
+            alt="Ministries at Jehovah Shalom International Missions"
             className="w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-slate-50"></div>
@@ -70,12 +78,83 @@ export default function Ministries({ onOpenPlanVisit, onOpenPrayerRequest }) {
               Service &amp; Discipleship
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight mb-4">
-              Our Ministries
+              Ministries of Jehovah Shalom International Missions
             </h1>
             <p className="text-slate-600 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
               Every member has a unique calling. Find where God is leading you to serve, grow, and make a lasting impact.
             </p>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* =========================================================
+          OUR MINISTRY FOCUSES — 3 CORE PILLARS
+          1. Evangelism 
+          2. Church Planting 
+          3. Community Transformation
+          ========================================================= */}
+      <section className="py-20 md:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <SectionTitle
+            badge="Strategic Priorities"
+            title="Our Ministry Focuses"
+            subtitle="The three foundational pillars that define our calling, empower our outreach, and drive our mission for the Kingdom of God."
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            {MINISTRY_FOCUSES.map((focus, idx) => (
+              <ScrollReveal key={focus.id} animation="fade-up" delay={idx * 150}>
+                <div className="h-full bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col group">
+                  {/* Photo Header */}
+                  <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img
+                      src={focus.image}
+                      alt={focus.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 bg-white/95 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 border border-gold-500/30 shadow-sm">
+                        Focus {focus.number}
+                      </span>
+                    </div>
+                    <div className="absolute bottom-3 left-4 right-4">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-gold-300 block">{focus.badge} &bull; {focus.scripture}</span>
+                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-white leading-snug">{focus.title}</h3>
+                    </div>
+                  </div>
+
+                  {/* Content Body */}
+                  <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-5">
+                    <div>
+                      <p className="text-gold-700 font-serif font-semibold text-sm mb-2">{focus.tagline}</p>
+                      <p className="text-slate-600 text-sm leading-relaxed mb-4">{focus.description}</p>
+                      
+                      <div className="space-y-2 pt-2 border-t border-slate-100">
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">Key Ministry Action</span>
+                        {focus.points.map((pt, i) => (
+                          <div key={i} className="flex items-start gap-2.5 text-xs text-slate-700">
+                            <CheckCircle2 className="w-4 h-4 text-gold-600 shrink-0 mt-0.5" />
+                            <span>{pt}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => handleOpenJoin(focus.title)}
+                      className="w-full py-2.5 px-4 bg-slate-50 hover:bg-gold-500 hover:text-white text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl border border-slate-200 hover:border-gold-500 transition-all flex items-center justify-center gap-2 group-hover:border-gold-500/40"
+                    >
+                      <span>Partner in {focus.title}</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
         </div>
       </section>
 

@@ -7,13 +7,35 @@
  */
 
 export const CHURCH_INFO = {
-  name: "JEHOVA SHALOM INTERNATIONAL MISSIONS",
-  shortName: "Jehova Shalom",
+  name: "JEHOVAH SHALOM INTERNATIONAL MISSIONS",
+  shortName: "Jehovah Shalom",
   ministryBrand: "JSM Ministries",
   tagline: "A Place of Faith, Hope & God's Presence",
   motto: "Where there is faith, there is hope.",
   missionStatement: "Building lives, strengthening families, and taking the love of Christ to communities around the world.",
   
+  // Ministry Focuses
+  ministryFocuses: [
+    {
+      id: "evangelism",
+      title: "Evangelism",
+      tagline: "Proclaiming the Good News to Every Soul",
+      description: "Taking the Gospel to every soul through village preaching, open-air crusades, children's rallies, and personal soul-winning across Tamil Nadu and beyond."
+    },
+    {
+      id: "church-planting",
+      title: "Church Planting",
+      tagline: "Establishing Gospel Lighthouses",
+      description: "Pioneering vibrant rural fellowships and church plants (including Kulathupatti and Usilampatti), raising indigenous leadership, and constructing permanent sanctuaries."
+    },
+    {
+      id: "community-transformation",
+      title: "Community Transformation",
+      tagline: "Demonstrating Christ's Love in Action",
+      description: "Holistic upliftment through school awareness programs (RPI & SHE Centre), free medical camps, children's educational support, and benevolence care packages."
+    }
+  ],
+
   // Leadership
   founder: {
     name: "Pastor Philip. M. Murugan",
@@ -48,8 +70,8 @@ export const CHURCH_INFO = {
     addressLine2: "Near Theivam Mordern RiceMill, Sillampatti",
     addressLine3: "Usilampatti, Madurai 625532",
     addressNote: "Main Sanctuary & Ministry Headquarters",
-    email: "[contact@jehovashalom.org]",
-    prayerEmail: "[prayer@jehovashalom.org]",
+    email: "[contact@jehovahshalom.org]",
+    prayerEmail: "[prayer@jehovahshalom.org]",
     officeHours: "Tuesday – Saturday: 9:00 AM – 5:00 PM"
   },
 

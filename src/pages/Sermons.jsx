@@ -6,7 +6,7 @@ import {
   BookOpen
 } from 'lucide-react';
 import { SERMONS, SERMON_CATEGORIES } from '../data/sermons';
-import SectionTitle from '../components/SectionTitle';
+import SEO from '../components/SEO';
 import ScrollReveal from '../components/ScrollReveal';
 import SermonCard from '../components/SermonCard';
 import ContactCTA from '../components/ContactCTA';
@@ -32,13 +32,20 @@ export default function Sermons({ onPlaySermon, onOpenPlanVisit, onOpenPrayerReq
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="Sermons & Messages | Jehovah Shalom International Missions"
+        description="Listen to uplifting biblical sermons and Gospel messages by Pastor Philip. M. Murugan and guest ministers at Jehovah Shalom International Missions (JSM Ministries)."
+        canonicalPath="/sermons"
+        keywords="Jehovah Shalom sermons, Pastor Philip M Murugan preaching, Christian messages Tamil Nadu, Bible teachings Usilampatti"
+        breadcrumbs={[{ name: "Sermons", path: "/sermons" }]}
+      />
       
       {/* Page Header (Bright Pleasant Theme) */}
       <section className="relative py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1920&auto=format&fit=crop"
-            alt="Sermon Archive"
+            alt="Sermon Archive - Jehovah Shalom International Missions"
             className="w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-slate-50"></div>
@@ -57,6 +64,9 @@ export default function Sermons({ onPlaySermon, onOpenPlanVisit, onOpenPrayerReq
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight mb-4">
               Sermons &amp; Messages
             </h1>
+            <p className="text-xl sm:text-2xl font-serif text-gold-800 font-medium mb-3">
+              Jehovah Shalom International Missions
+            </p>
             <p className="text-slate-600 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
               "Faith comes by hearing, and hearing by the Word of God." — Romans 10:17
             </p>

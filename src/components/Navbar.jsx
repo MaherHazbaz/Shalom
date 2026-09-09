@@ -100,7 +100,7 @@ export default function Navbar({ onOpenPlanVisit, onOpenPrayerRequest }) {
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg sm:text-xl tracking-wider text-slate-900 group-hover:text-gold-700 transition-colors leading-none">
-                JEHOVA SHALOM
+                JEHOVAH SHALOM
               </span>
               <span className="text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase text-gold-700 font-bold mt-1">
                 INTERNATIONAL MISSIONS
@@ -179,7 +179,7 @@ export default function Navbar({ onOpenPlanVisit, onOpenPrayerRequest }) {
                 className="w-10 h-10 rounded-full object-contain border border-slate-200"
               />
               <div>
-                <div className="font-serif font-bold text-slate-900 text-sm">JEHOVA SHALOM</div>
+                <div className="font-serif font-bold text-slate-900 text-sm">JEHOVAH SHALOM</div>
                 <div className="text-[9px] tracking-widest text-gold-700 uppercase font-bold">INTERNATIONAL MISSIONS</div>
               </div>
             </div>

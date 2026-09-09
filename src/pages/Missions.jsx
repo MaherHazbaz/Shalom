@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { 
   Globe, 
-  Sparkles, 
   MapPin, 
   HeartHandshake, 
   CheckCircle2, 
@@ -11,6 +10,7 @@ import {
   X
 } from 'lucide-react';
 import { MISSIONS_DATA } from '../data/missions';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import ScrollReveal from '../components/ScrollReveal';
 import AnimatedCounter from '../components/AnimatedCounter';
@@ -34,14 +34,21 @@ export default function Missions({ onOpenPlanVisit, onOpenPrayerRequest }) {
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="Global Missions & Outreach | Jehovah Shalom International Missions"
+        description="Discover global missions, village evangelism, church planting in Kulathupatti and Usilampatti, and community transformation by Jehovah Shalom International Missions (JSM Ministries)."
+        canonicalPath="/missions"
+        keywords="Jehovah Shalom International Missions, JSM missions, church planting Tamil Nadu, village preaching Usilampatti, Christian mission field"
+        breadcrumbs={[{ name: "Missions", path: "/missions" }]}
+      />
       
       {/* Page Header (Bright Pleasant Theme) */}
       <section className="relative py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1920&auto=format&fit=crop"
-            alt="International Missions"
-            className="w-full h-full object-cover opacity-15"
+            src="/images/Missions1.jpeg"
+            alt="JSM International Missions — village outreach, prayer, and children's ministry"
+            className="w-full h-full object-cover opacity-20 object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-slate-50"></div>
         </div>
@@ -57,8 +64,11 @@ export default function Missions({ onOpenPlanVisit, onOpenPrayerRequest }) {
               JSM Global Outreach
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight mb-4">
-              {MISSIONS_DATA.heading}
+              Taking the Gospel Beyond Borders
             </h1>
+            <p className="text-xl sm:text-2xl font-serif text-gold-800 font-medium mb-3">
+              Jehovah Shalom International Missions
+            </p>
             <p className="text-slate-600 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
               "{MISSIONS_DATA.overview}"
             </p>

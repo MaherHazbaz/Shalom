@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { CHURCH_INFO } from '../data/churchInfo';
 import ScrollReveal from '../components/ScrollReveal';
+import SEO from '../components/SEO';
 
 export default function Contact({ onOpenPrayerRequest }) {
   const [formData, setFormData] = useState({
@@ -54,13 +55,20 @@ export default function Contact({ onOpenPrayerRequest }) {
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="Contact Us | Jehovah Shalom International Missions"
+        description="Contact Jehovah Shalom International Missions in Usilampatti, Madurai, Tamil Nadu. Reach Pastor Philip. M. Murugan and our prayer ministry team at +91 7708263471 or +91 7603958123."
+        canonicalPath="/contact"
+        keywords="Contact Jehovah Shalom International Missions, Jehovah Shalom phone number, Pastor Philip M Murugan contact, church in Usilampatti, prayer request Usilampatti"
+        breadcrumbs={[{ name: "Contact Us", path: "/contact" }]}
+      />
       
       {/* Page Header (Bright Pleasant Theme) */}
       <section className="relative py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1920&auto=format&fit=crop"
-            alt="Contact Jehova Shalom"
+            alt="Contact Jehovah Shalom International Missions"
             className="w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-slate-50"></div>
@@ -77,10 +85,10 @@ export default function Contact({ onOpenPrayerRequest }) {
               Get In Touch
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight mb-4">
-              We'd Love to Hear From You
+              Contact Jehovah Shalom International Missions
             </h1>
             <p className="text-slate-600 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-              Reach out to our ministry team for visit inquiries, pastoral counsel, international missions, or prayer.
+              We'd love to hear from you. Reach out to our ministry team for visit inquiries, pastoral counsel, international missions, or prayer in Usilampatti, Madurai, Tamil Nadu.
             </p>
           </ScrollReveal>
         </div>
@@ -200,7 +208,7 @@ export default function Contact({ onOpenPrayerRequest }) {
                       </div>
                       <h4 className="text-2xl font-serif font-bold text-slate-900 mb-2">Message Received!</h4>
                       <p className="text-slate-600 text-sm max-w-md mx-auto mb-6">
-                        Thank you for reaching out to <strong>Jehova Shalom International Missions</strong>. Our team will review your message and reply shortly.
+                        Thank you for reaching out to <strong>Jehovah Shalom International Missions</strong>. Our team will review your message and reply shortly.
                       </p>
                       <button
                         onClick={() => setSubmitted(false)}

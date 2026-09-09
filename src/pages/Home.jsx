@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   ChevronDown,
   Sparkles,
-  Calendar,
   Clock,
   ArrowRight,
   Heart,
@@ -11,15 +10,17 @@ import {
   BookOpen,
   Play,
   Quote,
-  ShieldCheck
+  ShieldCheck,
+  CheckCircle2
 } from 'lucide-react';
 import { CHURCH_INFO } from '../data/churchInfo';
-import { MINISTRIES } from '../data/ministries';
+import { MINISTRIES, MINISTRY_FOCUSES } from '../data/ministries';
 import { SERMONS } from '../data/sermons';
 import { EVENTS } from '../data/events';
 import { MISSIONS_DATA } from '../data/missions';
 import { TESTIMONIALS } from '../data/testimonials';
 
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import ScrollReveal from '../components/ScrollReveal';
 import AnimatedCounter from '../components/AnimatedCounter';
@@ -44,7 +45,13 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
   };
 
   return (
-    <div className="space-y-0 bg-white">
+    <div className="bg-white overflow-hidden">
+      <SEO 
+        title="Jehovah Shalom International Missions | Official Website | Usilampatti, Madurai"
+        description="Official website of Jehovah Shalom International Missions (JSM Ministries), founded by Pastor Philip. M. Murugan. Sunday Worship Gatherings at 9:00 AM & 11:00 AM in Usilampatti, Madurai, Tamil Nadu."
+        canonicalPath="/"
+        keywords="Jehovah Shalom International Missions, jehovah shalom international missions, Jehovah Shalom, JSM Ministries, Pastor Philip M Murugan, Usilampatti Church, Madurai Church, Sunday worship Usilampatti"
+      />
 
       {/* =========================================================
           HERO SECTION (Bright, Radiant, White & Gold Aesthetics)
@@ -54,7 +61,7 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=1920&auto=format&fit=crop"
-            alt="Jehova Shalom Sanctuary Worship"
+            alt="Jehovah Shalom Sanctuary Worship"
             className="w-full h-full object-cover object-center scale-105 opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white"></div>
@@ -77,16 +84,19 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
 
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold tracking-widest uppercase bg-white/90 text-gold-800 border border-gold-500/30 backdrop-blur-md shadow-sm">
                 <Sparkles className="w-4 h-4 text-gold-600 animate-spin" style={{ animationDuration: '8s' }} />
-                <span>WELCOME TO JEHOVA SHALOM INTERNATIONAL MISSIONS</span>
+                <span>WELCOME TO JEHOVAH SHALOM INTERNATIONAL MISSIONS</span>
               </div>
             </div>
           </ScrollReveal>
 
           {/* Main Heading */}
-          <ScrollReveal animation="fade-up" delay={200} className="max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-slate-900 tracking-tight leading-[1.15] mb-6">
-              A Place of <span className="text-gold-gradient">Faith</span>, <span className="text-gold-gradient">Hope</span> &amp; <span className="text-slate-900">God's Presence</span>
+          <ScrollReveal animation="fade-up" delay={200} className="max-w-5xl">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-slate-900 tracking-tight leading-[1.15] mb-4">
+              Jehovah Shalom <span className="text-gold-gradient block sm:inline">International Missions</span>
             </h1>
+            <p className="text-xl sm:text-2xl md:text-3xl font-serif font-semibold text-slate-700 tracking-wide mb-6">
+              A Place of <span className="text-gold-gradient">Faith</span>, <span className="text-gold-gradient">Hope</span> &amp; God's Presence
+            </p>
           </ScrollReveal>
 
           {/* Supporting Text */}
@@ -171,7 +181,7 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-slate-900 tracking-tight leading-tight">
-                  Welcome to Jehova Shalom
+                  Welcome to Jehovah Shalom
                 </h2>
 
                 {/* Decorative Gold Accent */}
@@ -181,7 +191,7 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
                 </div>
 
                 <p className="text-slate-700 text-base sm:text-lg leading-relaxed pt-2">
-                  At <strong>Jehova Shalom International Missions</strong>, we are passionately committed to spreading the Gospel, serving communities, strengthening families, and helping people grow in a vibrant, life-changing relationship with Jesus Christ.
+                  At <strong>Jehovah Shalom International Missions</strong>, we are passionately committed to spreading the Gospel, serving communities, strengthening families, and helping people grow in a vibrant, life-changing relationship with Jesus Christ.
                 </p>
 
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -195,7 +205,7 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
                     "Where there is faith, there is hope."
                   </p>
                   <p className="text-xs text-slate-500 mt-1 uppercase tracking-wider font-bold">
-                    — Ministry Motto, Jehova Shalom
+                    — Ministry Motto, Jehovah Shalom
                   </p>
                 </div>
 
@@ -227,16 +237,16 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
 
                   <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white">
                     <img
-                      src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop"
-                      alt="Worship and Praise at Jehova Shalom"
+                      src="/images/Missions1.jpeg"
+                      alt="JSM Ministry field work — village preaching, prayer circles and children's outreach"
                       className="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
 
                     {/* Badge Floating on Image */}
                     <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-gold-500/30 text-slate-900 shadow-lg">
-                      <p className="font-serif font-bold text-sm text-gold-800">A Global Ministry of Peace</p>
-                      <p className="text-xs text-slate-600 mt-0.5">Touching lives with the love of Christ across nations.</p>
+                      <p className="font-serif font-bold text-sm text-gold-800">Real Ministry. Real Lives. Real Impact.</p>
+                      <p className="text-xs text-slate-600 mt-0.5">Village preaching, prayer circles, and children's outreach across Tamil Nadu.</p>
                     </div>
                   </div>
                 </div>
@@ -401,6 +411,78 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
       </section>
 
       {/* =========================================================
+          OUR MINISTRY FOCUSES — 3 CORE PILLARS
+          1. Evangelism 
+          2. Church Planting 
+          3. Community Transformation
+          ========================================================= */}
+      <section className="py-20 md:py-28 bg-gradient-to-b from-slate-50 via-white to-slate-50 relative border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <SectionTitle
+            badge="Strategic Priorities"
+            title="Our Ministry Focuses"
+            subtitle="The three divine mandates guiding our calling across villages, towns, and unreached regions."
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 mb-10">
+            {MINISTRY_FOCUSES.map((focus, idx) => (
+              <ScrollReveal key={focus.id} animation="fade-up" delay={idx * 150}>
+                <div className="h-full bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col group">
+                  {/* Visual Header */}
+                  <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img
+                      src={focus.image}
+                      alt={focus.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 bg-white/95 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 border border-gold-500/30 shadow-sm">
+                        Focus {focus.number}
+                      </span>
+                    </div>
+                    <div className="absolute bottom-3 left-4 right-4">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-gold-300 block">{focus.badge} &bull; {focus.scripture}</span>
+                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-white leading-snug">{focus.title}</h3>
+                    </div>
+                  </div>
+
+                  {/* Body Content */}
+                  <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-5">
+                    <div>
+                      <p className="text-gold-700 font-serif font-semibold text-sm mb-2">{focus.tagline}</p>
+                      <p className="text-slate-600 text-sm leading-relaxed mb-4">{focus.description}</p>
+                      
+                      <div className="space-y-2 pt-2 border-t border-slate-100">
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">Key Ministry Action</span>
+                        {focus.points.map((pt, i) => (
+                          <div key={i} className="flex items-start gap-2.5 text-xs text-slate-700">
+                            <CheckCircle2 className="w-4 h-4 text-gold-600 shrink-0 mt-0.5" />
+                            <span>{pt}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <Link
+                      to="/ministries"
+                      className="w-full py-2.5 px-4 bg-slate-50 hover:bg-gold-500 hover:text-white text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl border border-slate-200 hover:border-gold-500 transition-all flex items-center justify-center gap-2 group-hover:border-gold-500/40"
+                    >
+                      <span>Learn More About {focus.title}</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* =========================================================
           MINISTRIES SECTION
           ========================================================= */}
       <section className="py-20 md:py-28 bg-white relative">
@@ -499,6 +581,151 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
       </section>
 
       {/* =========================================================
+          MINISTRY IN PICTURES — Real Photo Gallery
+          ========================================================= */}
+      <section className="py-20 md:py-28 bg-white relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <SectionTitle
+            badge="Ministry in Pictures"
+            title="Glimpses From the Mission Field"
+            subtitle="Real moments from our frontline mission work — preaching in villages, worshipping under open skies, and touching lives across Tamil Nadu."
+          />
+
+          {/* Asymmetric 7-photo Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+
+            {/* Feature 1: Kulathupatti village church preaching */}
+            <ScrollReveal animation="fade-up" delay={100} className="col-span-2 lg:col-span-1 row-span-2">
+              <div className="relative rounded-3xl overflow-hidden h-full min-h-[300px] lg:min-h-[520px] group shadow-md border border-slate-200 hover:border-gold-500/40 hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/images/Kulathupatti.jpeg"
+                  alt="Sunday service at Kulathupatti village church"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="block text-[10px] font-bold uppercase tracking-widest text-gold-400 mb-1">Kulathupatti, Tamil Nadu</span>
+                  <p className="text-white font-serif font-bold text-base sm:text-lg leading-snug">Sunday Gospel Service in the Village Fellowship Hall</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Feature 2: Pastor Philip and wife leading fervent prayer */}
+            <ScrollReveal animation="fade-up" delay={150} className="col-span-2 sm:col-span-1 lg:col-span-1 row-span-2">
+              <div className="relative rounded-3xl overflow-hidden h-full min-h-[300px] lg:min-h-[520px] group shadow-md border border-slate-200 hover:border-gold-500/40 hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/images/pastor and pastors wife praying.jpeg"
+                  alt="Pastor Philip and his wife leading congregational prayer"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="block text-[10px] font-bold uppercase tracking-widest text-gold-400 mb-1">Pastoral Leadership</span>
+                  <p className="text-white font-serif font-bold text-base sm:text-lg leading-snug">Pastor Philip &amp; His Wife Leading in Fervent Intercessory Prayer</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Missions1 — multi-scene collage */}
+            <ScrollReveal animation="fade-up" delay={200}>
+              <div className="relative rounded-3xl overflow-hidden aspect-square group shadow-md border border-slate-200 hover:border-gold-500/40 hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/images/Missions1.jpeg"
+                  alt="Village gospel outreach, prayer circles, and children's Bible study"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white font-serif font-bold text-sm leading-snug">Village Preaching, Prayer &amp; Bible Study</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Worship under construction Usilampatti */}
+            <ScrollReveal animation="fade-up" delay={250}>
+              <div className="relative rounded-3xl overflow-hidden aspect-square group shadow-md border border-slate-200 hover:border-gold-500/40 hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/images/worship while construction on process usilampatti.jpeg"
+                  alt="Children praying inside the under-construction Usilampatti church building"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white font-serif font-bold text-sm leading-snug">Worship Amid Construction — Faith That Won't Wait</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Awareness Programs — school outreach */}
+            <ScrollReveal animation="fade-up" delay={300}>
+              <div className="relative rounded-3xl overflow-hidden aspect-square group shadow-md border border-slate-200 hover:border-gold-500/40 hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/images/awareness programs.jpg"
+                  alt="RPI SHE Centre awareness program at government primary school"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white font-serif font-bold text-sm leading-snug">School Awareness Program — RPI &amp; SHE Centre</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Missions2 — outdoor children street ministry */}
+            <ScrollReveal animation="fade-up" delay={350}>
+              <div className="relative rounded-3xl overflow-hidden aspect-square group shadow-md border border-slate-200 hover:border-gold-500/40 hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/images/Missions2.jpeg"
+                  alt="Outdoor children's gospel outreach in Tamil Nadu streets"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white font-serif font-bold text-sm leading-snug">Children's Street Gospel Rallies</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Usilampatti rented church */}
+            <ScrollReveal animation="fade-up" delay={400} className="col-span-2 lg:col-span-1">
+              <div className="relative rounded-3xl overflow-hidden aspect-square group shadow-md border border-slate-200 hover:border-gold-500/40 hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/images/Usilamappti church rented.jpeg"
+                  alt="Christmas gathering at the Usilampatti rented church fellowship"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <span className="block text-[10px] font-bold uppercase tracking-widest text-gold-400 mb-1">Usilampatti</span>
+                  <p className="text-white font-serif font-bold text-sm leading-snug">Christmas Celebration at Our Rented Fellowship</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              to="/missions"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-slate-50 hover:bg-gold-50 text-slate-900 font-bold rounded-full text-sm uppercase tracking-wider border border-slate-300 hover:border-gold-500/50 shadow-sm transition-all"
+            >
+              <span>See All Our Mission Work</span>
+              <ArrowRight className="w-4 h-4 text-gold-600" />
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* =========================================================
           SERMONS & MEDIA SECTION
           ========================================================= */}
       <section className="py-20 md:py-28 bg-white relative">
@@ -538,9 +765,9 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
         {/* Background Image with Bright Luminous Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1920&auto=format&fit=crop"
-            alt="The Lord is My Shepherd"
-            className="w-full h-full object-cover opacity-15"
+            src="/images/worship while construction on process usilampatti.jpeg"
+            alt="Children worshipping inside the under-construction Usilampatti church — faith that doesn't wait for walls"
+            className="w-full h-full object-cover opacity-20"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95"></div>
@@ -613,7 +840,7 @@ export default function Home({ onOpenPlanVisit, onOpenPrayerRequest, onPlaySermo
           <SectionTitle
             badge="Living Testimonies"
             title="Stories of Faith & Transformation"
-            subtitle="Hear how God's presence, prayer, and community at Jehova Shalom have touched and restored lives."
+            subtitle="Hear how God's presence, prayer, and community at Jehovah Shalom have touched and restored lives."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

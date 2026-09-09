@@ -1,3 +1,54 @@
+export const MINISTRY_FOCUSES = [
+  {
+    id: "evangelism",
+    number: "01",
+    title: "Evangelism",
+    tagline: "Proclaiming the Good News of Christ to Every Soul",
+    description: "Taking the Gospel beyond the four walls through village street preaching, open-air crusades, children & youth rallies, and personal soul-winning across Tamil Nadu and unreached regions.",
+    image: "/images/Missions2.jpeg",
+    badge: "Great Commission",
+    scripture: "Mark 16:15",
+    points: [
+      "Village Gospel Outreaches & Open-Air Preaching",
+      "Children & Youth Street Gospel Rallies",
+      "Door-to-Door Witnessing & Personal Evangelism",
+      "Gospel Literature & Bible Distribution"
+    ]
+  },
+  {
+    id: "church-planting",
+    number: "02",
+    title: "Church Planting",
+    tagline: "Establishing Gospel Lighthouses in Unreached Towns & Villages",
+    description: "Pioneering vibrant, sustainable local churches (such as our fellowships in Kulathupatti and Usilampatti), raising and mentoring native leaders, and building permanent sanctuaries for worship and discipleship.",
+    image: "/images/Kulathupatti.jpeg",
+    badge: "Kingdom Expansion",
+    scripture: "Matthew 16:18",
+    points: [
+      "Pioneering Rural Fellowships (Kulathupatti & Usilampatti)",
+      "Sanctuary Construction & Permanent Church Buildings",
+      "Training, Ordaining & Mentoring Indigenous Pastors",
+      "Discipleship Training & Weekly Prayer Networks"
+    ]
+  },
+  {
+    id: "community-transformation",
+    number: "03",
+    title: "Community Transformation",
+    tagline: "Demonstrating Christ's Love Through Compassionate Action",
+    description: "Bringing holistic spiritual, educational, and social upliftment to marginalized communities, schools, and families through awareness programs, medical camps, children's educational assistance, and compassion relief.",
+    image: "/images/awareness programs.jpg",
+    badge: "Compassion in Action",
+    scripture: "Matthew 25:40",
+    points: [
+      "School Awareness Programs (RPI & SHE Centre)",
+      "Free Community Health & Medical Screening Camps",
+      "Educational Aid & School Supplies for Children",
+      "Benevolence Care Packages & Emergency Relief"
+    ]
+  }
+];
+
 export const MINISTRIES = [
   {
     id: "worship",
@@ -8,7 +59,7 @@ export const MINISTRIES = [
     schedule: "Thursdays 6:30 PM & Sundays",
     description: "Leading the congregation into the reverent, transformative presence of God through Christ-centered praise and worship.",
     fullDescription: "Our worship ministry exists to cultivate an atmosphere of authentic praise, spiritual intimacy, and deep reverence for the Lord. We integrate choral harmonies, contemporary praise, and traditional hymns to magnify Jesus Christ and prepare hearts for God's Word.",
-    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop",
+    image: "/images/worship while construction on process usilampatti.jpeg",
     activities: [
       "Vocal & Instrumental Ensemble",
       "Youth Choir & Praise Band",
@@ -42,7 +93,7 @@ export const MINISTRIES = [
     schedule: "Sundays during 9:00 AM & 11:00 AM Services",
     description: "Nurturing the hearts and minds of children from infancy through grade school in God's love and Scripture.",
     fullDescription: "We believe children are a precious inheritance from the Lord. Our age-appropriate Sunday school programs, lively Bible stories, worship songs, and interactive activities build a firm foundation of faith in a fun and secure environment.",
-    image: "https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?q=80&w=800&auto=format&fit=crop",
+    image: "/images/Missions2.jpeg",
     activities: [
       "Sunday School Classes (Ages 3-12)",
       "Nursery & Toddler Care",
@@ -92,8 +143,8 @@ export const MINISTRIES = [
     lead: "Intercessory Prayer Team",
     schedule: "Daily 6:00 AM & Fridays 7:00 PM",
     description: "Standing in the gap for our church family, leadership, sick brethren, communities, and global revival.",
-    fullDescription: "Prayer is the engine of Jehova Shalom International Missions. Our intercessors keep unbroken prayer watches, lift up submitted prayer requests around the clock, and lead consecrated prayer vigils for revival across nations.",
-    image: "https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?q=80&w=800&auto=format&fit=crop",
+    fullDescription: "Prayer is the engine of Jehovah Shalom International Missions. Our intercessors keep unbroken prayer watches, lift up submitted prayer requests around the clock, and lead consecrated prayer vigils for revival across nations.",
+    image: "/images/pastor and pastors wife praying.jpeg",
     activities: [
       "24/7 Dedicated Prayer Chain",
       "Friday Night Intercession & Deliverance",
@@ -110,7 +161,7 @@ export const MINISTRIES = [
     schedule: "Saturdays 2:00 PM",
     description: "Demonstrating the tangible love of Christ through local food distribution, medical camps, and street evangelism.",
     fullDescription: "Our outreach team steps outside church walls to meet practical needs and share the good news of salvation. From distributing care packages to visiting elderly homes and organizing health screenings, we share God's love in word and deed.",
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop",
+    image: "/images/awareness programs.jpg",
     activities: [
       "Community Food & Essentials Distribution",
       "Neighborhood Gospel Visits",
@@ -127,7 +178,7 @@ export const MINISTRIES = [
     schedule: "Monthly Missions Council & Field Trips",
     description: "Planting churches, supporting native missionaries, and taking the Gospel of Peace across borders and nations.",
     fullDescription: "The core heartbeat of JSM Ministries. Spearheaded under the vision of Founder & General Secretary Pastor Philip. M. Murugan, we train, send, and resource missionaries in unreached territories, establishing gospel lighthouses and humanitarian relief.",
-    image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop",
+    image: "/images/Missions1.jpeg",
     activities: [
       "Cross-Border Missionary Support",
       "Church Planting in Rural & Remote Regions",

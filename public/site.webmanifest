@@ -1,0 +1,16 @@
+{
+  "name": "Jehovah Shalom International Missions",
+  "short_name": "Jehovah Shalom",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#cca43b",
+  "description": "A Place of Faith, Hope & God's Presence. Spreading the Gospel, church planting, and transforming lives in Usilampatti, Madurai, Tamil Nadu, and across nations.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

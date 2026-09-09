@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jehovashalom.org/sitemap.xml
+Sitemap: https://shalom-one-pi.vercel.app/sitemap.xml

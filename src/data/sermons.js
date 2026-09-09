@@ -22,7 +22,7 @@ export const SERMONS = [
   {
     id: "sermon-2",
     title: "The Peace of God That Surpasses Understanding",
-    series: "Jehova Shalom: God Our Peace",
+    series: "Jehovah Shalom: God Our Peace",
     speaker: "Pastor Philip. M. Murugan",
     speakerRole: "Founder & General Secretary — JSM Ministries",
     date: "August 30, 2026",

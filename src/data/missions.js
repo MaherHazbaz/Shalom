@@ -31,39 +31,39 @@ export const MISSIONS_DATA = {
   initiatives: [
     {
       id: "rural-village-outreach",
-      title: "Rural Village Gospel & Medical Mission",
-      region: "Remote Communities & Tribes",
+      title: "Kulathupatti Village Gospel Mission",
+      region: "Kulathupatti, Tamil Nadu",
       status: "Active Mission",
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop",
-      description: "Sending mobile evangelism and medical relief teams to isolated villages without access to clinics or churches.",
-      goals: "Plant 3 new village fellowship centers, provide 500 family hygiene kits, and translate basic discipleship tracts."
+      image: "/images/Kulathupatti.jpeg",
+      description: "Our team regularly ministers at the Kulathupatti village fellowship — a humble tin-roofed church hall packed with families from surrounding rural communities, hearing the Gospel and experiencing God's love firsthand.",
+      goals: "Strengthen the Kulathupatti fellowship center, equip the local pastor, provide 200 family hygiene kits, and expand outreach to 3 neighboring villages."
     },
     {
       id: "children-education-aid",
-      title: "Hope for Tomorrow Education Sponsorship",
-      region: "Underprivileged Children",
+      title: "Hope for Tomorrow — School Awareness & Education",
+      region: "Government Schools, Tamil Nadu",
       status: "Ongoing Initiative",
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
-      description: "Empowering children of struggling families with school uniforms, textbooks, daily nutrition, and after-school Bible tutoring.",
-      goals: "Sponsor 150 school children, setup a community learning corner, and conduct annual Bible camps."
+      image: "/images/awareness programs.jpg",
+      description: "In partnership with Relief Projects India (RPI) and the SHE Centre, JSM conducts awareness programs directly in government primary schools — bringing life-skills education, child protection awareness, and Gospel values to hundreds of schoolchildren.",
+      goals: "Reach 500+ school children annually, conduct monthly school visits, and partner with local teachers for holistic child development and after-school Bible tutoring."
     },
     {
-      id: "clean-water-wells",
-      title: "Living Waters Clean Well Project",
-      region: "Drought & Water-Scarce Regions",
+      id: "usilampatti-church-plant",
+      title: "Usilampatti Church Plant & Community Fellowship",
+      region: "Usilampatti, Madurai District",
       status: "Expanding Program",
-      image: "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?q=80&w=800&auto=format&fit=crop",
-      description: "Drilling deep freshwater borewells in underserved communities while sharing the message of Jesus, the Living Water.",
-      goals: "Provide sustainable clean drinking water to over 2,000 residents across rural areas."
+      image: "/images/Usilamappti church rented.jpeg",
+      description: "JSM has established a rented fellowship space in Usilampatti where believers gather for Sunday worship, Christmas celebrations, and community events. The congregation is growing steadily and is a beacon of hope in this district.",
+      goals: "Secure a permanent building for the Usilampatti congregation, disciple 50 new believers, and launch a children's Sunday school ministry."
     },
     {
       id: "native-pastor-support",
-      title: "Native Pastor & Evangelist Sponsorship",
-      region: "Pioneering Church Plants",
+      title: "Native Evangelist Street Outreach & Church Planting",
+      region: "Urban & Rural Tamil Nadu",
       status: "Continuous Fellowship",
-      image: "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop",
-      description: "Supporting dedicated frontline native evangelists with monthly living stipends, ministry travel bicycles, and study Bibles.",
-      goals: "Support 25 full-time native pastors carrying the Gospel in difficult frontier regions."
+      image: "/images/Missions2.jpeg",
+      description: "Our native missionaries carry the Gospel beyond church walls — into streets, courtyards, and open grounds — where children and families gather for lively praise, prayer, and the Word of God under the open sky.",
+      goals: "Support 25 full-time native evangelists, plant 5 new street-church groups, and conduct quarterly children's outreach rallies across Tamil Nadu."
     }
   ]
 };

@@ -1,15 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { 
-  Award, 
   Quote, 
   Sparkles, 
-  ArrowRight,
   Phone,
-  CheckCircle2,
-  BookOpen
+  CheckCircle2
 } from 'lucide-react';
 import { CHURCH_INFO } from '../data/churchInfo';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import ScrollReveal from '../components/ScrollReveal';
 import ContactCTA from '../components/ContactCTA';
@@ -46,13 +43,20 @@ export default function About({ onOpenPlanVisit, onOpenPrayerRequest }) {
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="About Us | Jehovah Shalom International Missions"
+        description="Learn about Jehovah Shalom International Missions (JSM Ministries) founded by Pastor Philip. M. Murugan. Explore our history, biblical beliefs, vision, and heart for spreading the Gospel in Usilampatti, Tamil Nadu, and across nations."
+        canonicalPath="/about"
+        keywords="About Jehovah Shalom International Missions, Jehovah Shalom, Pastor Philip M Murugan, JSM Ministries history, Christian beliefs Usilampatti"
+        breadcrumbs={[{ name: "About Us", path: "/about" }]}
+      />
       
       {/* Page Header Hero (Bright Pleasant Theme) */}
       <section className="relative py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1920&auto=format&fit=crop"
-            alt="About Jehova Shalom International Missions"
+            alt="About Jehovah Shalom International Missions"
             className="w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-slate-50"></div>
@@ -69,7 +73,7 @@ export default function About({ onOpenPlanVisit, onOpenPrayerRequest }) {
               Our Calling &amp; Identity
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight mb-4">
-              About Jehova Shalom
+              About Jehovah Shalom International Missions
             </h1>
             <p className="text-slate-600 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
               "Building lives, strengthening families, and taking the love of Christ to communities around the world."
@@ -100,7 +104,7 @@ export default function About({ onOpenPlanVisit, onOpenPrayerRequest }) {
                 </div>
 
                 <p className="text-slate-700 text-base leading-relaxed">
-                  <strong>JEHOVA SHALOM INTERNATIONAL MISSIONS (JSM Ministries)</strong> was birthed with a singular spiritual burden: to manifest the peace (<em>Shalom</em>), restoration, and life-changing grace of Jesus Christ to broken souls and unreached regions.
+                  <strong>JEHOVAH SHALOM INTERNATIONAL MISSIONS (JSM Ministries)</strong> was birthed with a singular spiritual burden: to manifest the peace (<em>Shalom</em>), restoration, and life-changing grace of Jesus Christ to broken souls and unreached regions.
                 </p>
 
                 <p className="text-slate-600 text-sm leading-relaxed">
@@ -113,7 +117,7 @@ export default function About({ onOpenPlanVisit, onOpenPrayerRequest }) {
                     "{CHURCH_INFO.motto}"
                   </p>
                   <p className="text-xs text-slate-500 font-bold uppercase">
-                    — Jehova Shalom Ministry Pillar
+                    — Jehovah Shalom Ministry Pillar
                   </p>
                 </div>
               </ScrollReveal>
@@ -124,14 +128,14 @@ export default function About({ onOpenPlanVisit, onOpenPrayerRequest }) {
               <ScrollReveal animation="slide-left">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white">
                   <img
-                    src="https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=800&auto=format&fit=crop"
-                    alt="Sanctuary Fellowship"
-                    className="w-full h-[450px] object-cover"
+                    src="/images/pastor and pastors wife praying.jpeg"
+                    alt="Pastor Philip and his wife leading prayer"
+                    className="w-full h-[450px] object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6 text-white">
-                    <p className="font-serif font-bold text-lg text-gold-300">Faith, Hope &amp; God's Presence</p>
-                    <p className="text-xs text-slate-200 mt-1">Nurturing believers to impact their generations.</p>
+                    <p className="font-serif font-bold text-lg text-gold-300">Faith, Prayer &amp; God's Presence</p>
+                    <p className="text-xs text-slate-200 mt-1">Pastor Philip &amp; pastoral family leading in prayer for the nations.</p>
                   </div>
                 </div>
               </ScrollReveal>

@@ -5,6 +5,7 @@ import {
   Search
 } from 'lucide-react';
 import { EVENTS, EVENT_CATEGORIES } from '../data/events';
+import SEO from '../components/SEO';
 import ScrollReveal from '../components/ScrollReveal';
 import EventCard from '../components/EventCard';
 import ContactCTA from '../components/ContactCTA';
@@ -24,13 +25,20 @@ export default function Events({ onRegisterEvent, onOpenPlanVisit, onOpenPrayerR
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="Upcoming Events & Calendar | Jehovah Shalom International Missions"
+        description="Join special church services, revival conferences, prayer vigils, and community outreaches at Jehovah Shalom International Missions (JSM Ministries)."
+        canonicalPath="/events"
+        keywords="Jehovah Shalom events, church calendar Usilampatti, Christian meetings Tamil Nadu, Sunday worship calendar"
+        breadcrumbs={[{ name: "Events", path: "/events" }]}
+      />
       
       {/* Page Header (Bright Pleasant Theme) */}
       <section className="relative py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1920&auto=format&fit=crop"
-            alt="Events at Jehova Shalom"
+            src="/images/Kulathupatti.jpeg"
+            alt="Events at Jehovah Shalom International Missions"
             className="w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-slate-50"></div>
@@ -49,8 +57,11 @@ export default function Events({ onRegisterEvent, onOpenPlanVisit, onOpenPrayerR
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight mb-4">
               Events &amp; Calendar
             </h1>
+            <p className="text-xl sm:text-2xl font-serif text-gold-800 font-medium mb-3">
+              Jehovah Shalom International Missions
+            </p>
             <p className="text-slate-600 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-              Join us for special revival conferences, worship nights, fellowships, and community outreaches.
+              Join us for special revival conferences, worship nights, fellowships, and community outreaches in Usilampatti and beyond.
             </p>
           </ScrollReveal>
         </div>

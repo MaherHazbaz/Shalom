@@ -28,7 +28,7 @@ export default function Footer({ onOpenPlanVisit, onOpenPrayerRequest }) {
               </div>
               <div>
                 <span className="font-serif font-bold text-lg text-slate-900 block tracking-wider leading-none group-hover:text-gold-700 transition-colors">
-                  JEHOVA SHALOM
+                  JEHOVAH SHALOM
                 </span>
                 <span className="text-[10px] font-sans tracking-[0.2em] uppercase text-gold-700 font-bold mt-1 block">
                   INTERNATIONAL MISSIONS
@@ -228,7 +228,7 @@ export default function Footer({ onOpenPlanVisit, onOpenPrayerRequest }) {
         {/* Bottom Bar with Copyright & Scroll to Top */}
         <div className="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} Jehova Shalom International Missions. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Jehovah Shalom International Missions. All Rights Reserved.
           </div>
 
           <div className="flex items-center gap-6">

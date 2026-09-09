@@ -1,45 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://jehovashalom.org/</loc>
+    <loc>https://shalom-one-pi.vercel.app/</loc>
     <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shalom-one-pi.vercel.app/logo.png</image:loc>
+      <image:title>Jehovah Shalom International Missions Emblem</image:title>
+      <image:caption>Official Logo of Jehovah Shalom International Missions</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://jehovashalom.org/about</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jehovashalom.org/ministries</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jehovashalom.org/sermons</loc>
+    <loc>https://shalom-one-pi.vercel.app/about</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://shalom-one-pi.vercel.app/pastor-philip.jpg</image:loc>
+      <image:title>Pastor Philip. M. Murugan</image:title>
+      <image:caption>Pastor Philip. M. Murugan - Founder &amp; General Secretary of Jehovah Shalom International Missions</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://jehovashalom.org/events</loc>
+    <loc>https://shalom-one-pi.vercel.app/missions</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jehovashalom.org/missions</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jehovashalom.org/contact</loc>
+    <loc>https://shalom-one-pi.vercel.app/ministries</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shalom-one-pi.vercel.app/sermons</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shalom-one-pi.vercel.app/events</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shalom-one-pi.vercel.app/contact</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
